@@ -37,4 +37,20 @@ li {
   margin: 10px;
   list-style: none;
   font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
 }
+.english {
+  background-color: #dbeafe;
+}
+.math {
+  background-color: #dcfce7;
+}
+.philosphy {
+  background-color: #fee2e2
+}
+.computerscience {
+  background-color: #fef3c7
+}
+  
+  
