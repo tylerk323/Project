@@ -57,5 +57,7 @@ li {
 .computerscience {
   background-color: #fef3c7;
 }
-  
+.dark-mode li {
+  color: black;
+}
   
