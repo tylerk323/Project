@@ -9,6 +9,10 @@ body {
   background-color: #111827;
   color: white;
 }
+.dark-mode .container {
+  background-color: #111827;
+  color: white;
+}
 
 header {
   background:linear-gradient(to right, #2563eb, #1e3a8a);
@@ -24,7 +28,8 @@ header {
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
-input {
+input,
+select {
   padding: 10px;
   margin: 5px;
 border-radius: 5px;
@@ -46,11 +51,11 @@ li {
 .math {
   background-color: #dcfce7;
 }
-.philosphy {
-  background-color: #fee2e2
+.philosophy {
+  background-color: #fee2e2;
 }
 .computerscience {
-  background-color: #fef3c7
+  background-color: #fef3c7;
 }
   
   
