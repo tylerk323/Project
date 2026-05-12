@@ -33,7 +33,7 @@ function saveHomework() {
   let homeworkArray = [];
   listItems.forEach(function(item) {
     homeworkArray.push({
-      text: item.innerGTML,
+      text: item.innerHTML,
       classes: item.className
     });
   }),
@@ -44,7 +44,7 @@ function saveHomework() {
       );
 }
 
-fucntion loadHomework() {
+function loadHomework() {
   let savedHomework =
     JSON.parse(localStorage.getItem("homework"));
 
@@ -56,7 +56,7 @@ fucntion loadHomework() {
       li.className = item.classes;
       li.onclick = function () {
         li.classList.toggle("completed");
-        savedHomework();
+        saveHomework();
       };
       document.getElementById("homeworkList")
       .appendChild(li);
