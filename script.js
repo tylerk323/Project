@@ -4,7 +4,7 @@ let homework =
   document.getElementById("homeworkInput").value;
 
 let dueDate = 
-  ocument.getElementById("dateInput").value;
+  document.getElementById("dateInput").value;
 
 let list = 
   document.getElementById("homeworkList");
