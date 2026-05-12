@@ -1,16 +1,21 @@
 function addHomework() {
 
-let homework = document.getElementById("homeworkInput").value,
+let homework = 
+  document.getElementById("homeworkInput").value;
 
-let dueDate = document.getElementById("dateInput").value,
+let dueDate = 
+  ocument.getElementById("dateInput").value;
 
-let list = document.getElementById("homeworkList");
+let list = 
+  document.getElementById("homeworkList");
 
-let li = document.createElement("li");
+let li = 
+  document.createElement("li");
 
-li.innerHTML = homework + " - Due: " + dueDate;
+li.innerHTML = 
+  homework + " - Due: " + dueDate;
 
-li.onclick = fucntion () {
+li.onclick = function () {
   li.style.textDecoration = "line-through";
 };
   list.appendChild(li);
