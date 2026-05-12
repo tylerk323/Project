@@ -1,20 +1,36 @@
 <!DOCTYPE html>
-</html>
-</head>
+<html>
+
+<head>
   <title>HomeworkHelper</title>
 
-  <style>
-    body{
-          font-family: Arial, sans-serif
-          background-color: #f4f7b;
-        margin: 0;
-      padding: 0,
-      color: #333
-    }
-    header {
-          background-color: #4f46e5
-        color: white;
-        padding: 25px;
-        text-algin: center
-      }
-  </style>
+<link rel+"stylesheet" href="style.css"
+</head>
+
+<body>
+  <header>
+    <h1>Homework Helper</h1>
+
+    <button onclick="toggleMode ()">
+        Toggle Dark/Light 
+    </button>
+  </header>
+  <div class="container">
+    
+    <h2>Add Homework</h2>
+    <input
+      type="text"
+      id="homeworkInput"
+      placeholder="Enter homework assignment"
+      >
+    <input
+      type="date"
+      id="dateInput"
+      >
+    <button onclick="addHomework ()">
+      Add Homework
+    </button>
+    <h2>Homework List</h2>
+  </div>
+</body>
+</html>
