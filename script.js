@@ -6,11 +6,15 @@ let homework =
 let dueDate = 
   document.getElementById("dateInput").value;
 
+let className =
+  document.getElementById("classInput").value;
+
 let list = 
   document.getElementById("homeworkList");
 
 let li = 
   document.createElement("li");
+  li.classList.add(className);
 
 li.innerHTML = 
   homework + " - Due: " + dueDate;
@@ -29,7 +33,7 @@ function toggleMode() {
 
 function saveHomework() {
   let listItems = 
-    document.querySelectorAll("homeworkList li");
+    document.querySelectorAll("#homeworkList li");
   let homeworkArray = [];
   listItems.forEach(function(item) {
     homeworkArray.push({
@@ -52,6 +56,8 @@ function loadHomework() {
     savedHomework.forEach(function(item) {
       let li =
         document.createElement("li");
+      
+   
       li.innerHTML = item.text;
       li.className = item.classes;
       li.onclick = function () {
